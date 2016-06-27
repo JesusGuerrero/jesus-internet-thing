@@ -48,5 +48,12 @@ module.exports = function( config ) {
     });
   });
 
+  server.views({
+    engines: {
+      pug: require('pug')
+    },
+    path: Path.join(__dirname, '../views')
+  });
+
   return server;
 };

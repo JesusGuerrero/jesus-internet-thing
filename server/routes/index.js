@@ -6,7 +6,7 @@ module.exports = function( server ) {
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-      reply('<h1>Hello World</h1>');
+      reply.view('index');
     }
   });
 };
