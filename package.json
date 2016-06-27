@@ -1,0 +1,21 @@
+{
+  "name": "jesus-internet-things",
+  "version": "0.0.1",
+  "description": "Powered by MAHR.IO",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "respository": {
+    "type": "git"
+  },
+  "author": "Jesus Rocha Guerrero",
+  "license": "MIT",
+  "dependencies": {
+    "boom": "2.10.1",
+    "hapi": "8.8.1",
+    "good": "6.3.0",
+    "good-console": "5.3.1",
+    "node-env-file": "0.1.8"
+  }
+}
