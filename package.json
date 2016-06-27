@@ -17,6 +17,6 @@
     "good": "6.3.0",
     "good-console": "5.3.1",
     "node-env-file": "0.1.8",
-    "pug": "2.0.0-alpha6"
+    "ejs": "2.4.2"
   }
 }

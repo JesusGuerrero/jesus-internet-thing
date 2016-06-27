@@ -49,9 +49,7 @@ module.exports = function( config ) {
   });
 
   server.views({
-    engines: {
-      pug: require('pug')
-    },
+    engines: { ejs: require('ejs') },
     path: Path.join(__dirname, '../views')
   });
 

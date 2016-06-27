@@ -1,0 +1,18 @@
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    .carousel-v1 .carousel-arrow a.right i {
+        right: 300px;
+    }
+    .carousel-indicators {
+        margin-left: -45%;
+    }
+}

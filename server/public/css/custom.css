@@ -1,0 +1,25 @@
+.header {
+    background: #272727;
+}
+.header .topbar ul li {
+    color: #999;
+}
+.header .navbar-default .navbar-nav > li > a {
+    color: #eee;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    .header .navbar-default .navbar-nav > li > a {
+        padding: 9px 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .navbar-default .navbar-nav > li > a {
+        padding: 9px 39px;
+    }
+}

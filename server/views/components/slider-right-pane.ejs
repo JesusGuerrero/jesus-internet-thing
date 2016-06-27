@@ -1,0 +1,58 @@
+<style>
+    .background-opacity {
+        background: rgba(0,0,0,.5);
+    }
+    .no-background {
+        background: transparent;
+    }
+    .no-background h1, .no-background h3 {
+        color: #efefef;
+    }
+    .no-background, .background-opacity {
+        width: 300px;
+        position: absolute;
+        margin-left: -300px;
+        z-index: 999;
+    }
+
+    @media (min-width: 992px) {
+        .no-background, .background-opacity {
+            height: 353px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .no-background, .background-opacity {
+            height: 428px;
+        }
+    }
+</style>
+
+<div class="pull-right visible-md visible-lg">
+    <div class="background-opacity"></div>
+    <div class="no-background col-md-12 text-center">
+        <br/>
+        <h1>Get A Quote</h1>
+        <br class="visible-lg"/>
+        <br/>
+        <select class="form-control">
+            <option>Auto</option>
+            <option>Homeowner</option>
+            <option>Condo</option>
+            <option>Renters</option>
+            <option>Motorcycle</option>
+            <option>Life</option>
+            <option>Other...</option>
+        </select>
+        <br/>
+        <button type="button" class="btn btn-success btn-block">Start My Quote >></button>
+
+        <br/>
+        <br/>
+        <h3>FEATURED CARRIERS:</h3>
+        <br class="visible-lg"/>
+        <div class="col-md-10 col-md-offset-1">
+            <% include ./slider-featured %>
+        </div>
+
+    </div>
+</div>

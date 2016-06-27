@@ -1,0 +1,37 @@
+<div id="featured-flexslider" class="flexslider home clients">
+    <ul class="slides" style="padding: 0; margin: 0;">
+        <li>
+            <a href="#">
+                <img src="assets/img/slider-featured1.png" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="assets/img/slider-featured2.png" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="assets/img/slider-featured3.png" alt="" />
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready( function(){
+        jQuery('#featured-flexslider').flexslider({
+            animation: "slide",
+            easing: "swing",
+            animationLoop: true,
+            itemWidth: 1,
+            itemMargin: 1,
+            minItems: 1,
+            maxItems: 1,
+            controlNav: false,
+            directionNav: false,
+            move: 1,
+            slideshowSpeed: 4000
+        });
+    });
+</script>
