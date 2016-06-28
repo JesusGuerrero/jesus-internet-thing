@@ -1,12 +1,12 @@
 <div class="header">
-    <div class="topbar text-center">
+    <div class="topbar text-center hidden-xs">
         <div class="container">
-            <div class="col-md-4 text-left">
+            <div class="col-sm-4 text-left">
                 <a class="navbar-brand" href="/" style="height: 75px; overflow: hidden; position:absolute;">
                     <img id="logo-header" src="assets/img/logo.png" alt="Logo">
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <ul class="loginbar">
                     <li>
                         <small>
@@ -19,7 +19,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-sm-4 text-right">
                 <!-- Topbar Navigation -->
                 <ul class="loginbar">
                     <li>
@@ -42,6 +42,9 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-bars"></span>
                 </button>
+                <a class="navbar-brand visible-xs pull-left" href="/" style="height: 75px; overflow: hidden;">
+                    <img id="logo-header" src="assets/img/logo.png" alt="Logo">
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,6 +52,11 @@
                 <ul class="nav navbar-nav">
 
                     <!-- Pages -->
+                    <li class="visible-xs">
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
                     <li>
                         <a href="javascript:void(0);">
                             Insurance Products
