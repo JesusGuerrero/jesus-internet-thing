@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Fia-Online: Contact Us</title>
+    <% include ./components/head %>
+    <script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
+    <style type="text/css">
+        .background-opacity {
+            background: rgba(0,0,0,.5);
+        }
+        .no-background {
+            background: transparent;
+        }
+        .no-background h1, .no-background h3 {
+            color: #efefef;
+        }
+        .no-background, .background-opacity {
+            width: 300px;
+            position: absolute;
+            margin-left: -300px;
+            z-index: 999;
+        }
+
+        @media (min-width: 992px) {
+            .no-background, .background-opacity {
+                height: 300px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .no-background, .background-opacity {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper"><!-- style="background: url('/assets/img/charcoalBG.jpg') repeat "-->
+    <% include ./components/header %>
+
+    <div class="container">
+        <div class="pull-right col-md-3">
+            <div class="pull-right visible-md visible-lg">
+                <div class="background-opacity"></div>
+                <div class="no-background col-md-12 text-center">
+                    <br/>
+                    <h1>Get A Quote</h1>
+                    <br class="visible-lg"/>
+                    <br/>
+                    <select class="form-control">
+                        <option>Auto</option>
+                        <option>Homeowner</option>
+                        <option>Condo</option>
+                        <option>Renters</option>
+                        <option>Motorcycle</option>
+                        <option>Life</option>
+                        <option>Other...</option>
+                    </select>
+                    <br/>
+                    <button type="button" class="btn btn-success btn-block">Start My Quote >></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include ./Components/google-map %>
+    <div class="container margin-bottom-50">
+        <% include ./Components/contact-directions %>
+        <% include ./Components/contact-form %>
+
+    </div>
+</div>
+<% include ./components/footer %>
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/owl-carousel.js"></script>
+</body>
+</html>
