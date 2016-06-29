@@ -4,14 +4,23 @@
     <title></title>
     <% include ./components/head %>
     <script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="wrapper"><!-- style="background: url('/assets/img/charcoalBG.jpg') repeat "-->
     <% include ./components/header %>
 
-    <div class="container margin-bottom-50">
+    <div class="container margin-bottom-50" style="overflow: hidden">
+
+
+        <% include ./components/block-subheading %>
+        <img src="/assets/img/banner-about.png" style="width: 100%;" class="visible-md visible-lg" />
+
+        <% var heading1 = 'About Us' %>
+        <% include ./components/mixin-heading-1 %>
+
         <div class="row  margin-bottom-50">
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <div class="headline"><h2>Fernandez Insurance Agency</h2></div>
                 <p>Located in Peoria, Integra Insurance Group is one of Arizona’s leading independent insurance agencies.
                     For years, many families have placed their trust in the agents at Integra for reliable insurance service.
@@ -28,8 +37,8 @@
                 </p>
 
             </div>
-            <div class="col-md-3">
-
+            <div class="col-md-4">
+                <% include ./components/block-also-see %>
             </div>
         </div>
         <div class="row">

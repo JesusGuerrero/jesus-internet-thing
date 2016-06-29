@@ -1,0 +1,50 @@
+<style type="text/css">
+    .clients ul.slides li {
+        background: none;
+    }
+</style>
+<div class="headline"><h2>Also see</h2></div>
+<div class="panel-body">
+    <ul class="list-unstyled margin-bottom-20">
+        <li><i class="fa fa-check color-green"></i> <a href="/insurance-products">Shop for Insurance</a> </li>
+        <li><i class="fa fa-check color-green"></i> <a href="/service-center">Customer Service</a> </li>
+        <li><i class="fa fa-check color-green"></i> <a href="/contact">Contact Us</a></li>
+        <li><i class="fa fa-check color-green"></i> <a href="/privacy-policy">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="headline"><h2>Fine Insurance Companies</h2></div>
+<div id="featured-flexslider" class="flexslider home clients">
+    <ul class="slides" style="padding: 0; margin: 0;">
+        <li>
+            <img src="assets/img/slider-featured1.png" alt="" style="width: 100%;" />
+        </li>
+        <li>
+            <img src="assets/img/slider-featured2.png" alt="" style="width: 100%;" />
+        </li>
+        <li>
+            <img src="assets/img/slider-featured3.png" alt="" style="width: 100%;" />
+        </li>
+        <li>
+            <img src="assets/img/slider-featured4.png" alt="" style="width: 100%;" />
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready( function(){
+        jQuery('#featured-flexslider').flexslider({
+            animation: "slide",
+            easing: "swing",
+            animationLoop: true,
+            itemWidth: 1,
+            itemMargin: 1,
+            minItems: 1,
+            maxItems: 1,
+            controlNav: false,
+            directionNav: false,
+            move: 1,
+            slideshowSpeed: 4000
+        });
+    });
+</script>
