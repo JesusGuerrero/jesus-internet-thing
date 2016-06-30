@@ -1,36 +1,46 @@
+<style type="text/css">
+    .header ul.loginbar {
+        padding: 0;
+        margin: 0;
+    }
+    .header ul.loginbar li b {
+        color: #FFFFD6;
+    }
+</style>
+
+
 <div class="header">
-    <div class="topbar text-center hidden-xs">
+    <div class="topbar text-center hidden-xs" style="padding-top: 20px;">
         <div class="container">
-            <div class="col-sm-4 text-left">
-                <a class="navbar-brand" href="/" style="height: 75px; overflow: hidden; position:absolute;">
+            <div class="col-sm-4 col-md-4 col-lg-6 text-left">
+                <a class="navbar-brand" href="/" style="height: 75px; overflow: hidden; position:absolute; top: 0px;">
                     <img id="logo-header" src="assets/img/logo.png" alt="Logo">
                 </a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 text-right">
                 <ul class="loginbar">
-                    <li>
-                        <small>
-                            93 N. Main Street, Ste B,<br> Porterville, CA 93257
-                        </small>
-                        <br/>
-                        <b>
-                            Porterville's Insurance Agency
-                        </b>
+                    <li style="line-height: 16px;">
+                        <b style="font-size: 18px;">93 N. Main Street, Ste B,</b><br>
+                        Porterville, CA 93257
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-4 col-md-4 col-lg-3 text-right">
                 <!-- Topbar Navigation -->
                 <ul class="loginbar">
-                    <li>
-                        <br/>
-                        <b>559.782.0005</b><br>
-                        09:30 AM - 05:30 PM / M-F
+                    <li style="line-height: 16px;">
+                        <b style="font-size: 18px;">tel: +1 (559) 782-0005</b><br>
+                        09:30 AM - 05:30 PM /
+                        <span class="hidden-sm">Mon - Fri</span>
+                        <span class="visible-sm" style="display: inline-block !important">M-F</span>
                     </li>
                 </ul>
                 <!-- End Topbar Navigation -->
             </div>
         </div>
+    </div>
+    <div class="text-center hidden-xs hidden-sm">
+        <h3 style="color: #FFFFF9;">Porterville's Insurance Agency</h3>
     </div>
 
     <!-- Navbar -->
