@@ -7,7 +7,8 @@
     "start": "node server/index.js"
   },
   "respository": {
-    "type": "git"
+    "type": "git",
+    "url": "git@github.com:JesusGuerrero/jesus-internet-thing.git"
   },
   "author": "Jesus Rocha Guerrero",
   "license": "MIT",
