@@ -20,6 +20,22 @@ module.exports = function( server ) {
 
   server.route({
     method: 'GET',
+    path: '/service-center/insurance-companies',
+    handler: function (request, reply) {
+      reply.view('service-center/insurance-companies');
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/service-center/claims',
+    handler: function (request, reply) {
+      reply.view('service-center/claims');
+    }
+  });
+  
+  server.route({
+    method: 'GET',
     path: '/service-center',
     handler: function (request, reply) {
       reply.view('service');
