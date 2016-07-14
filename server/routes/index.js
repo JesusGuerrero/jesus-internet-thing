@@ -20,9 +20,9 @@ module.exports = function( server ) {
 
   server.route({
     method: 'GET',
-    path: '/service-center/insurance-companies',
+    path: '/service-center/insurance-company-information',
     handler: function (request, reply) {
-      reply.view('service-center/insurance-companies');
+      reply.view('service-center/insurance-company-information');
     }
   });
 
@@ -33,12 +33,34 @@ module.exports = function( server ) {
       reply.view('service-center/claims');
     }
   });
-  
+
   server.route({
     method: 'GET',
     path: '/service-center',
     handler: function (request, reply) {
       reply.view('service');
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/faq',
+    handler: function (request, reply) {
+      reply.view('faq');
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/forms/{name}',
+    handler: function (request, reply) {
+      switch( request.params  .name ) {
+        case 'agent-of-record':
+          reply.view('forms/index');
+          break;
+        default:
+          reply.view('four-oh-four');
+      }
     }
   });
 
@@ -93,4 +115,11 @@ module.exports = function( server ) {
       }
     }
   });
+  server.route({
+    method: 'GET',
+    path: '/{any}',
+    handler: function( req, rep ) {
+      rep.view('four-oh-four');
+    }
+  })
 };
